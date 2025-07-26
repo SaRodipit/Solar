@@ -3,7 +3,7 @@ const { sequelize, DataTypes } = require('./db');
 const Group = require('./models/Group')(sequelize, DataTypes);
 const PendingGroup = require('./models/PendingGroup')(sequelize, DataTypes);
 
-const token = '7600665438:AAHXDVepbk1QylzY9atnkqmkHXAGD5--TMY';
+const token = '';// ID бота
 const bot = new TelegramBot(token, { polling: true });
 
 const userState = {}; 
